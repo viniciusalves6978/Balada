@@ -11,7 +11,7 @@ public class balada {
         long cpf2;
         int idade;
         int idade2 = 0;
-        String continuacao;
+        boolean continuacao = true;
 
         while (continuacao){
 
@@ -56,15 +56,13 @@ public class balada {
             }
             System.out.println("##########################################");
 
-            System.out.println("Quer continuar? S/N");
-            continuacao = teclado.next();
 
             System.out.println("Deseja continuar? (1 = sim / 2 = não)");
 
             int opcao = teclado.nextInt();
 
             if (opcao == 2){
-                continuar =
+                continuacao = false;
             }
         }
 
